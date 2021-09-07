@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 30189507}
   - component: {fileID: 30189506}
   - component: {fileID: 30189508}
+  - component: {fileID: 30189509}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -194,6 +195,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9be5236673f9ef74fa5808ac8d305170, type: 3}
   - {fileID: 21300000, guid: 897181a309e433e41abaee16faad6355, type: 3}
   backgroundimage: {fileID: 967202234}
+--- !u!114 &30189509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30189505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1994349b371d5a04ba68f9cb09161b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoClickersLastTime: []
+  autoclickerprice: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1023,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1750394579}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 30189509}
+        m_TargetAssemblyTypeName: ClickManager, Assembly-CSharp
+        m_MethodName: onbuyautoclicker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1750394579
 MonoBehaviour:
   m_ObjectHideFlags: 0

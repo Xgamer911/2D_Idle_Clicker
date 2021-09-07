@@ -28,6 +28,12 @@ public class GameManager : MonoBehaviour
         goldtext.text = "Gold: " + gold.ToString();
     }
 
+    public void takegold(int amount)
+    {
+        gold -= amount;
+        goldtext.text = "Gold: " + gold.ToString();
+    }
+
     public void BackgroundCheck()
     {
         enemiesuntilbackgroundchange--;
