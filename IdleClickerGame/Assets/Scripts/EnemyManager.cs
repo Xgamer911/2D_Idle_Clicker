@@ -22,6 +22,12 @@ public class EnemyManager : MonoBehaviour
         GameObject obj = Instantiate(enemyToSpawn, canvas);
 
         curEnemy = obj.GetComponent<Enemy>();
+    }
 
+    public void DefeatEnemy (GameObject enemy)
+    {
+        Destroy(enemy);
+        CreateNewEnemy();
     }
 }
+

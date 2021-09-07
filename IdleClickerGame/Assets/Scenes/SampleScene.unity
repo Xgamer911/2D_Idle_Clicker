@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30189507}
   - component: {fileID: 30189506}
+  - component: {fileID: 30189508}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -157,7 +158,7 @@ MonoBehaviour:
   - {fileID: 7409863171362594780, guid: 1df4ae380ae676e439cf20c474de4d2a, type: 3}
   - {fileID: 7812887831783202206, guid: 194da6a21a5580c4abb715bb6f79ca27, type: 3}
   curEnemy: {fileID: 0}
-  canvas: {fileID: 0}
+  canvas: {fileID: 1810761952}
 --- !u!4 &30189507
 Transform:
   m_ObjectHideFlags: 0
@@ -172,6 +173,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &30189508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30189505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3fbf4ff46f2114a81092ccb8f545b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gold: 0
+  goldtext: {fileID: 1650115297}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +840,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gold : 500'
+  m_text: 'Gold : 0
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
