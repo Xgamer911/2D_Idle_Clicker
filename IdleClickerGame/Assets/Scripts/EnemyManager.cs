@@ -28,6 +28,7 @@ public class EnemyManager : MonoBehaviour
     {
         Destroy(enemy);
         CreateNewEnemy();
+        GameManager.instance.BackgroundCheck();
     }
 }
 
